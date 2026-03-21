@@ -39,7 +39,7 @@ body {
 @keyframes surgir {
   0% {
     opacity: 0;
-    filter: blur(10px);           /* Começa embaçado (combina com o tema Glass) */
+    filter: blur(5px);           /* Começa embaçado (combina com o tema Glass) */
   }
   100% {
     opacity: 1;
@@ -254,6 +254,10 @@ body {
   height: auto;
 }
 
+.btn:hover{
+  background-color: #ffffff6f;
+}
+
 /* CARDS BOTTOM */
 .cards-bottom {
   margin-top: 20px;
@@ -322,15 +326,23 @@ body {
 .footer h2 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: 400;
 }
 
 .footer p {
   font-size: 14px;
-  opacity: 0.7;
+  margin-bottom: 15px;
+  text-decoration-thickness: 0.2px;
 }
+ 
+ a{
+  color: #ffffffbc;
+ }
 
+ a:hover{
+  color: #fff;
+ }
 
 .bola-neon{
   position: absolute;
@@ -409,4 +421,18 @@ body {
 .glass-white {
   --glass-color: rgba(255, 255, 255, 0.3); 
   border-color: rgba(255, 255, 255, 0.4);   
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+  transform: translateY(20%);
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transition: all 1s;
+  transform: translate(0);
 }

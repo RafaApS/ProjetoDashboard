@@ -68,7 +68,7 @@
       </section>
       <img class="ondas" src="img/Ondas.png" />
       <!-- DISQUE 180 -->
-      <section class="disque-section">
+      <section class="hidden disque-section">
         <div class="glass-card disque180">
           <div class="texto">
             <h2>Disque 180</h2>
@@ -102,18 +102,34 @@
               allowfullscreen
             ></iframe>
 
-            <button class="btn">Procurar Ajuda</button>
+            <button
+              class="btn"
+              onclick="
+                window.location.href =
+                  'https://www.gov.br/mulheres/pt-br/ligue180'
+              "
+            >
+              Procurar Ajuda
+            </button>
           </div>
         </div>
 
         <div class="glass-card libras">
           <img class="imgLibra" src="img/libras.png" />
-          <button class="btn">Ir para o site</button>
+          <button
+            class="btn"
+            onclick="
+              window.location.href =
+                'https://www.gov.br/mulheres/pt-br/ligue180/libras'
+            "
+          >
+            Ir para o site
+          </button>
         </div>
       </section>
       <div class="bola-neon bola2"></div>
       <!-- DISQUE 181 E 100 -->
-      <section class="cards-bottom">
+      <section class="hidden cards-bottom">
         <div class="glass-card card-info">
           <h3>Disque 181</h3>
           <h4>Denuncie! Sua voz faz a diferença.</h4>
@@ -143,17 +159,25 @@
         </div>
       </section>
       <!-- FOOTER -->
-      <footer class="footer">
+      <footer class="hidden footer">
         <div>
           <h2>Fonte bibliograficas</h2>
-          <p>Ministério da Justiça e Segurança Pública</p>
-          <p>Dados Nacionais de Segurança Pública</p>
-          <p>Central de Atendimento à Mulher – Ligue 180</p>
+          <p>
+            <a
+              href="https://www.gov.br/mj/pt-br/assuntos/sua-seguranca/seguranca-publica/estatistica/dados_nacionais_de_seguranca_publica"
+            >
+              Ministério da Justiça e Segurança Pública – Dados Nacionais de
+              Segurança Pública</a
+            >
+          </p>
+          <a href="https://www.gov.br/mulheres/pt-br/ligue180">
+            <p>Central de Atendimento à Mulher – Ligue 180</p>
+          </a>
         </div>
         <div class="bola-neon bola1"></div>
-        <img class="illustration" src="img/menina.png" />
+        <img class="hidden illustration" src="img/menina.png" />
       </footer>
-      <img class="ondasb" src="img/Ondasb.png" />
+      <img class="hidden ondasb" src="img/Ondasb.png" />
     </div>
     <script src="script.js"></script>
   </body>
