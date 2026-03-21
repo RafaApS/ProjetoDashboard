@@ -1,0 +1,143 @@
+/* MOBILE */
+@media screen and (max-width: 768px) {
+
+ 
+  .container {
+    padding: 20px;
+    display: flex; /* Adicionado para o alinhamento funcionar */
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centraliza textos dentro do container */
+  }
+
+  .header h1 {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .header h2 {
+    font-size: 14px;
+  }
+
+  /* POWER BI */
+  .powerbi-frame {
+    height: 300px;
+  }
+
+  /* BOTÃO */
+  .btn-insight {
+    margin-left: 0;
+  }
+
+  /* CARROSSEL */
+  .carousel-track {
+    width: 100%;
+  }
+
+  .left, .right {
+    display: none;
+  }
+
+  /* EMPILHAR TUDO */
+  .disque-section {
+    display: flex;
+    flex-direction: column;
+    width: 1000px; /* MUDADO de 1000px para 100% */
+    align-items: center; /* Centraliza os itens filhos horizontalmente */
+    justify-content: center;
+    margin: 0 auto; /* Garante centralização externa */
+  }
+
+   .disque180 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+    box-sizing: border-box; 
+  }
+
+.disque180 h2{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.disque180 h3{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.disque180 p{
+    width: 100%;
+}
+  .texto {
+    width: 100%;
+  }
+
+  .video-area iframe {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+
+  .libras {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  /* CARDS */
+  .cards-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os cards um embaixo do outro */
+    gap: 20px; /* Adiciona espaço entre os cards */
+    width: 1000px;
+
+  }
+
+  .card-info,
+  .card-info2 {
+    margin: 0 auto;   /* Centraliza o card se ele for menor que a tela */
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+
+  /* FOOTER */
+  .footer {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+
+  .illustration {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  /* DECORAÇÃO */
+  .ondas,
+  .ondasb,
+  .bola-neon {
+    display: none;
+  }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+
+  .disque-section {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .disque180 {
+    width: 100%;
+  }
+
+  .card-info,
+  .card-info2 {
+    width: 100%;
+  }
+}
