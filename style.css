@@ -436,3 +436,34 @@ body {
   transition: all 1s;
   transform: translate(0);
 }
+
+.btn-topo {
+    display: none; 
+    position: fixed; 
+    bottom: 20px;
+    padding: 3px 0px;
+    right: 20px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    background-color: transparent; 
+    color: white;
+    border: solid 1px #fff;
+    border-radius: 50%; 
+    text-align: center;
+    line-height: 50px; 
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-topo:hover {
+    background-color: #ffffff36; 
+}
+
+/* Rolagem suave na página */
+html {
+    scroll-behavior: smooth;
+}

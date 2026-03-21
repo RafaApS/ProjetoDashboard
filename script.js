@@ -45,3 +45,18 @@ const myObserver = new IntersectionObserver((entries) => {
 
 const elements = document.querySelectorAll('.hidden')
 elements.forEach((element) => myObserver.observe(element))
+
+var btn = document.getElementById("btnTopo");
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+};
+
+btn.addEventListener("click", function(e){
+    e.preventDefault();
+    window.scrollTo({top: 0, behavior: 'smooth'});
+});

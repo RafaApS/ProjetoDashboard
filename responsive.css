@@ -1,143 +1,158 @@
-/* MOBILE */
 @media screen and (max-width: 768px) {
 
- 
   .container {
+    width: 100%; 
     padding: 20px;
-    display: flex; /* Adicionado para o alinhamento funcionar */
-    flex-direction: column;
-    align-items: center;
-    text-align: center; /* Centraliza textos dentro do container */
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  .header {
+    margin-bottom: 40px;
   }
 
   .header h1 {
-    font-size: 24px;
-    width: 100%;
+    width: 100%;   
+    font-size: 28px; 
+    padding: 0 10px;
   }
 
   .header h2 {
     font-size: 14px;
+    padding: 0 20px;
   }
 
-  /* POWER BI */
-  .powerbi-frame {
-    height: 300px;
+  .card {
+    position: relative;
+    transform: translateY(40%);
+    height: 350px; 
   }
 
-  /* BOTÃO */
   .btn-insight {
     margin-left: 0;
+    width: 200px;
+    display: block;
+    text-align: center;
+    transform: translateY(600%);
+    height: 40px;
   }
 
-  /* CARROSSEL */
   .carousel-track {
-    width: 100%;
+width: 600px !important;
+  height: 370px;    
+  padding: 15px;
+    transform: translateY(230%);
+
   }
 
-  .left, .right {
-    display: none;
+
+
+  /* Ajuste das Setas no Mobile */
+   .arrow {
+    display: flex;
+    width: 35px;             /* Tamanho fixo e pequeno da área de clique */
+    height: 35px;
+    position: absolute;
+    top: auto; 
+    border-radius: 50%;      /* Deixa redondo */
+    padding: 0;              /* Remove espaços extras */
+    overflow: hidden;     
+    transform: translateY(890%);   /* Garante que nada saia da bolinha */
   }
 
-  /* EMPILHAR TUDO */
+  .left { 
+    display: flex !important; 
+    left: 75%;               /* Centraliza mais à esquerda do meio */
+  }
+
+  .right { 
+    display: flex !important; 
+    right: 0%;              /* Centraliza mais à direita do meio */
+  }
+
+
   .disque-section {
     display: flex;
-    flex-direction: column;
-    width: 1000px; /* MUDADO de 1000px para 100% */
-    align-items: center; /* Centraliza os itens filhos horizontalmente */
-    justify-content: center;
-    margin: 0 auto; /* Garante centralização externa */
+    flex-direction: column; 
+    margin-top: 50px;
+    gap: 30px;
+    transform: translateY(28%);
   }
 
-   .disque180 {
-    display: flex;
+  .disque180 {
+    width: 100%; 
     flex-direction: column;
-    text-align: justify;
     padding: 20px;
-    box-sizing: border-box; 
+    gap: 20px;
+    text-align: justify;
   }
 
-.disque180 h2{
-    font-size: 20px;
-    margin-top: 20px;
-}
-.disque180 h3{
-    font-size: 16px;
-    margin-top: 20px;
-}
-
-.disque180 p{
-    width: 100%;
-}
-  .texto {
+  .texto, .video-area {
     width: 100%;
   }
 
-  .video-area iframe {
+  .texto p {
     width: 100%;
-    margin-top: 20px;
+    text-align: justify;
   }
-
 
   .libras {
     width: 100%;
-    font-size: 14px;
+    margin: 0 auto;
   }
 
-  /* CARDS */
+  .imgLibra {
+    width: 100%;
+    height: auto;
+  }
+
   .cards-bottom {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza os cards um embaixo do outro */
-    gap: 20px; /* Adiciona espaço entre os cards */
-    width: 1000px;
-
+    width: 100%;
+    gap: 20px;
+    transform: translateY(48%);
   }
 
-  .card-info,
-  .card-info2 {
-    margin: 0 auto;   /* Centraliza o card se ele for menor que a tela */
-    display: flex;
-    flex-direction: column;
-    text-align: justify;
+  .card-info, .card-info2 {
+    width: 100%; 
+    padding: 20px;
   }
 
-  /* FOOTER */
+  .card-info h3, .card-info2 h3 {
+    font-size: 24px;
+  }
+
   .footer {
-    flex-direction: column;
     padding: 50px 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    transform: translateY(50%);
   }
 
   .illustration {
     width: 100%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 30px;
   }
+  
 
-  /* DECORAÇÃO */
-  .ondas,
-  .ondasb,
-  .bola-neon {
-    display: none;
+  .ondas, .ondasb, .bola-neon, .flores {
+    display: none; 
   }
 }
 
-/* TABLET */
-@media (max-width: 1024px) {
-
-  .disque-section {
-    grid-template-columns: 1fr;
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+  
+  .disque-section, .cards-bottom {
+    grid-template-columns: 1fr; 
   }
 
-  .cards-bottom {
-    grid-template-columns: 1fr;
-  }
-
-  .disque180 {
-    width: 100%;
-  }
-
-  .card-info,
-  .card-info2 {
+  .disque180, .card-info2 {
     width: 100%;
   }
 }
