@@ -7,6 +7,59 @@
     overflow-x: hidden;
   }
 
+  .overlay-mobile {
+    display: flex;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(15, 0, 36, 0.7); /* Cor do seu fundo com transparência */
+    backdrop-filter: blur(15px);     /* O BLUR que você pediu */
+    -webkit-backdrop-filter: blur(15px);
+    z-index: 9999;                   /* Fica na frente de tudo */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .popup-mobile {
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 20px;
+    max-width: 320px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .icon-pc {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  .popup-mobile h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .popup-mobile p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-bottom: 25px;
+    line-height: 1.4;
+  }
+
+  .btn-entrar {
+    background: #fff;
+    color: #0F0024;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+  }
+
+
   .header {
     margin-bottom: 40px;
   }
@@ -21,12 +74,20 @@
     font-size: 14px;
     padding: 0 20px;
   }
+  
+.card {
+  height: auto;            /* Deixa a altura livre */
+  aspect-ratio: 9 / 16;     /* Proporção de celular (vertical) */
+  min-height: 500px;        /* Altura mínima para os gráficos aparecerem */
+  width: 100%;
+}
 
-  .card {
-    position: relative;
-    transform: translateY(40%);
-    height: 350px; 
-  }
+.powerbi-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 
   .btn-insight {
     margin-left: 0;
@@ -39,9 +100,9 @@
 
   .carousel-track {
 width: 600px !important;
-  height: 370px;    
+  height: auto;    
   padding: 15px;
-    transform: translateY(230%);
+    transform: translateY(180%);
 
   }
 
@@ -57,12 +118,13 @@ width: 600px !important;
     border-radius: 50%;      /* Deixa redondo */
     padding: 0;              /* Remove espaços extras */
     overflow: hidden;     
-    transform: translateY(890%);   /* Garante que nada saia da bolinha */
+    transform: translateY(900%);   
+    padding: 6px 6px;
   }
 
   .left { 
     display: flex !important; 
-    left: 75%;               /* Centraliza mais à esquerda do meio */
+    left: 75%;   
   }
 
   .right { 
@@ -111,7 +173,7 @@ width: 600px !important;
     flex-direction: column;
     width: 100%;
     gap: 20px;
-    transform: translateY(48%);
+    transform: translateY(54%);
   }
 
   .card-info, .card-info2 {
@@ -128,7 +190,7 @@ width: 600px !important;
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    transform: translateY(50%);
+    transform: translateY(55%);
   }
 
   .illustration {
