@@ -64,3 +64,4 @@ btn.addEventListener("click", function (e) {
 function fecharAviso() {
   document.getElementById("aviso-mobile").style.display = "none";
 }
+

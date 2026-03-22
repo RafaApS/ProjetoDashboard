@@ -87,6 +87,7 @@
   height: 100%;
   border: none;
 }
+ 
 
 
   .btn-insight {
@@ -94,7 +95,7 @@
     width: 200px;
     display: block;
     text-align: center;
-    transform: translateY(600%);
+    transform: translateY(-150%);
     height: 40px;
   }
 
@@ -102,7 +103,7 @@
 width: 600px !important;
   height: auto;    
   padding: 15px;
-    transform: translateY(180%);
+    transform: translateY(-50%);
 
   }
 
@@ -118,7 +119,7 @@ width: 600px !important;
     border-radius: 50%;      /* Deixa redondo */
     padding: 0;              /* Remove espaços extras */
     overflow: hidden;     
-    transform: translateY(900%);   
+    transform: translateY(90%);   
     padding: 6px 6px;
   }
 
@@ -138,7 +139,7 @@ width: 600px !important;
     flex-direction: column; 
     margin-top: 50px;
     gap: 30px;
-    transform: translateY(28%);
+    transform: translateY(-4%);
   }
 
   .disque180 {
@@ -172,8 +173,8 @@ width: 600px !important;
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 20px;
-    transform: translateY(54%);
+    gap: 30px;
+    transform: translateY(-5%);
   }
 
   .card-info, .card-info2 {
@@ -190,7 +191,7 @@ width: 600px !important;
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    transform: translateY(55%);
+    transform: translateY(10%);
   }
 
   .illustration {
