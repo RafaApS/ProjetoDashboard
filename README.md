@@ -16,14 +16,6 @@ O objetivo é dar visibilidade ao problema por meio de dados, além de reunir in
   <img src="./img/PagInicialD.png" width="100%" alt="Tela inicial" />
 </p>
 
-<br>
-
-## 🛠️ Tecnologias utilizadas
-
-- **HTML5**
-- **CSS3** (`style.css` e `responsive.css` para responsividade)
-- **JavaScript** (`script.js`)
-- **Power BI Embedded** (visualização dos dashboards e gráficos)
   
 <br>
 
