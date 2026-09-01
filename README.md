@@ -12,6 +12,10 @@ O objetivo é dar visibilidade ao problema por meio de dados, além de reunir in
 
 > ⚠️ Os dados refletem apenas os casos formalmente denunciados às autoridades e podem não representar a totalidade das ocorrências, já que muitos casos não são reportados.
 
+<p align="center">
+  <img src="./img/PagInicialD.png" width="100%" alt="Tela inicial" />
+</p>
+
 <br>
 
 ## 🛠️ Tecnologias utilizadas
